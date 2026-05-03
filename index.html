@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Soorya T | DevOps Engineer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    background: linear-gradient(rgba(2,6,23,0.95), rgba(2,6,23,0.95)),
+    url('https://images.unsplash.com/photo-1451187580459-43490279c0fa');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: linear-gradient(180deg, #0f172a, #020617);
+    padding: 20px;
+    position: fixed;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;   /* shows full image */
+    background: white;     /* 👈 THIS FIXES IT */
+    border: 3px solid #9333ea;
+}
+
+.profile h2 {
+    margin: 10px 0;
+}
+
+.profile p {
+    color: #94a3b8;
+}
+
+.menu a {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background: linear-gradient(45deg, #3b82f6, #9333ea);
+}
+
+/* MAIN */
+.main {
+    margin-left: 260px;
+    padding: 40px;
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1e3a8a, #9333ea);
+    padding: 50px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero span {
+    color: #22c55e;
+}
+
+/* SECTION */
+.section {
+    margin-top: 60px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.card {
+    background: rgba(30,41,59,0.6);
+    padding: 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px #9333ea;
+}
+
+/* TAG */
+.tag {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 5px;
+    background: linear-gradient(45deg, #22c55e, #3b82f6);
+    border-radius: 10px;
+    font-size: 12px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+    .sidebar { display: none; }
+    .main { margin-left: 0; }
+    .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <div class="profile">
+        <img src="profile.png">
+        <h2>Soorya T</h2>
+        <p>DevOps Engineer</p>
+    </div>
+
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#cert">Certifications</a>
+        <a href="#contact">Contact</a>
+    </div>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+<!-- HERO -->
+<div class="hero">
+    <div class="hero-content">
+        <div>
+            <h1>Hello, I'm <span>Soorya</span></h1>
+            <h3>DevOps Engineer | AWS | Linux</h3>
+            <p>Building scalable cloud infrastructure, automation and CI/CD pipelines</p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475"
+             style="width:250px; border-radius:15px; margin-top:20px;">
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+        Enthusiastic Computer Science student with strong foundation in Python, Java and Cloud Computing.
+        Passionate about DevOps, AWS, Linux and automation.
+        Focused on building scalable and high-performance systems.
+        </p>
+    </div>
+</div>
+
+<!-- SKILLS -->
+<div id="skills" class="section">
+    <h2>Core Skills</h2>
+    <div class="card">
+        <span class="tag">Linux</span>
+        <span class="tag">AWS</span>
+        <span class="tag">DevOps</span>
+        <span class="tag">CI/CD</span>
+        <span class="tag">Docker</span>
+        <span class="tag">GitHub</span>
+    </div>
+</div>
+
+<!-- WHAT I DO -->
+<div class="section">
+    <h2>What I Do</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Cloud Infrastructure</h3>
+            <p>Design and manage scalable cloud environments using AWS services.</p>
+        </div>
+
+        <div class="card">
+            <h3>CI/CD Automation</h3>
+            <p>Build pipelines using GitHub Actions and Jenkins for continuous delivery.</p>
+        </div>
+
+        <div class="card">
+            <h3>System Optimization</h3>
+            <p>Improve performance, reliability and monitoring using Linux systems.</p>
+        </div>
+    </div>
+</div>
+
+<!-- PROJECTS -->
+<div id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Adaptive Load Balancing</h3>
+            <p>Dynamic traffic routing improving performance and reducing latency.</p>
+        </div>
+
+        <div class="card">
+            <h3>Agriculture Loan System</h3>
+            <p>Cloud-based React application for loan management.</p>
+        </div>
+
+        <div class="card">
+            <h3>Fitness System</h3>
+            <p>Java + MySQL + React application for tracking workouts.</p>
+        </div>
+    </div>
+</div>
+
+<!-- EXPERIENCE -->
+<div id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="card">
+        <h3>CodSoft Virtual Internship</h3>
+        <p>Developed Java applications and improved debugging & problem-solving skills.</p>
+    </div>
+</div>
+
+<!-- EDUCATION -->
+<div id="education" class="section">
+    <h2>Education</h2>
+    <div class="card">
+        <p>B.Tech Information Technology (2021–2025)</p>
+        <p>Sri Krishna College of Engineering and Technology</p>
+    </div>
+</div>
+
+<!-- CERTIFICATIONS -->
+<div id="cert" class="section">
+    <h2>Certifications</h2>
+    <div class="card">
+        <p>AWS Academy Cloud Foundation</p>
+        <p>NPTEL Soft Skills</p>
+        <p>Ethics in Engineering</p>
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: sooryathiru1107@gmail.com</p>
+        <p>Phone: 9600878424</p>
+        <p>Location: Coimbatore</p>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
